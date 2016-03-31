@@ -1,7 +1,0 @@
-127.0.0.1 - - [30/Mar/2016:17:10:26 -0300] "GET / HTTP/1.1" 200 57 http-bio-8080-exec-1 545
-127.0.0.1 - - [30/Mar/2016:17:10:26 -0300] "GET /favicon.ico HTTP/1.1" 404 949 http-bio-8080-exec-2 18
-127.0.0.1 - - [30/Mar/2016:17:10:26 -0300] "GET /favicon.ico HTTP/1.1" 404 949 http-bio-8080-exec-4 2
-127.0.0.1 - - [30/Mar/2016:17:14:14 -0300] "GET /employee HTTP/1.1" 404 949 http-bio-8080-exec-6 4
-127.0.0.1 - - [30/Mar/2016:17:14:17 -0300] "GET /employee HTTP/1.1" 404 949 http-bio-8080-exec-7 3
-127.0.0.1 - - [30/Mar/2016:17:14:41 -0300] "GET /employee/create HTTP/1.1" 400 968 http-bio-8080-exec-8 32
-127.0.0.1 - - [30/Mar/2016:17:14:45 -0300] "GET /create HTTP/1.1" 404 949 http-bio-8080-exec-9 3

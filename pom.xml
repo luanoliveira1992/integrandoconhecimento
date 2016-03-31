@@ -19,6 +19,7 @@
 		<commons-collections-version>3.2.1</commons-collections-version>
 		<commons-fileupload-version>1.2.1</commons-fileupload-version>
 		<commons-codec-version>1.9</commons-codec-version>
+		<hibernate-validator-version>4.3.1.Final</hibernate-validator-version>
 		<context.path>projetoIntegrador</context.path>
 	</properties>
 	<dependencies>
@@ -84,6 +85,12 @@
 			<artifactId>hibernate-entitymanager</artifactId>
 			<version>${hibernate.version}</version>
 		</dependency>
+		
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-validator</artifactId>
+			<version>${hibernate-validator-version}</version>
+		</dependency>
 
 		<!-- Commons -->
 		<dependency>
@@ -101,6 +108,13 @@
 			<artifactId>commons-email</artifactId>
 			<version>${commons-email.version}</version>
 		</dependency>
+		
+		<!-- hsqldb para testes locais -->
+		<dependency>
+            <groupId>org.hsqldb</groupId>
+            <artifactId>hsqldb</artifactId>
+            <version>2.3.2</version>
+        </dependency>
 	</dependencies>
 	<build>
 		<finalName>projetoIntegrador</finalName>
@@ -123,7 +137,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
-
-
 </project>

@@ -7,7 +7,7 @@
   http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.2.xsd
   http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd">
 
-	<context:component-scan base-package="com.beingjavaguys.controller" />
+	<context:component-scan base-package="com.projetoIntegrador.controller" />
 	<mvc:annotation-driven />
 
 	<bean id="dataSource"
@@ -17,13 +17,14 @@
 		<property name="username" value="root" />
 		<property name="password" value="root" />
 	</bean>
-
-	<bean id="sessionFactory"
+	
+    <bean id="sessionFactory"
 		class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
 		<property name="dataSource" ref="dataSource" />
 		<property name="annotatedClasses">
+		<!-- Colocar o models -->
 			<list>
-				<value>com.beingjavaguys.model.Employee</value>
+				<value>com.projetoIntegrador.model.Projeto</value>
 			</list>
 		</property>
 		<property name="hibernateProperties">
@@ -41,7 +42,8 @@
 
 	<bean id="persistenceExceptionTranslationPostProcessor"
 		class="org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor" />
-
+<!-- 
 	<bean id="dataDao" class="com.beingjavaguys.dao.DataDaoImpl"></bean>
 	<bean id="dataServices" class="com.beingjavaguys.services.DataServicesImpl"></bean>
+	 -->
 </beans>
