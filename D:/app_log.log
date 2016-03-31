@@ -1,0 +1,28 @@
+2016-03-30 17:10:08 INFO  DispatcherServlet:479 - FrameworkServlet 'mvc-dispatcher': initialization started
+2016-03-30 17:10:08 INFO  XmlWebApplicationContext:513 - Refreshing WebApplicationContext for namespace 'mvc-dispatcher-servlet': startup date [Wed Mar 30 17:10:08 BRT 2016]; root of context hierarchy
+2016-03-30 17:10:08 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-config.xml]
+2016-03-30 17:10:09 INFO  AutowiredAnnotationBeanPostProcessor:141 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-03-30 17:10:09 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2016-03-30 17:10:09 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2016-03-30 17:10:09 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2016-03-30 17:10:09 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-03-30 17:10:09 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2016-03-30 17:10:09 WARN  JdbcServicesImpl:204 - HHH000342: Could not obtain connection to query metadata : Communications link failure
+
+Last packet sent to the server was 0 ms ago.
+2016-03-30 17:10:09 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-03-30 17:10:09 INFO  LobCreatorBuilder:88 - HHH000422: Disabling contextual LOB creation as connection was null
+2016-03-30 17:10:09 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-03-30 17:10:09 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-03-30 17:10:09 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/employee/create],methods=[POST],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.beingjavaguys.model.Status com.beingjavaguys.controller.RestController.addEmployee(com.beingjavaguys.model.Employee)
+2016-03-30 17:10:09 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/employee/{id}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.beingjavaguys.model.Employee com.beingjavaguys.controller.RestController.getEmployee(long)
+2016-03-30 17:10:09 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/employee/list],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<com.beingjavaguys.model.Employee> com.beingjavaguys.controller.RestController.getEmployee()
+2016-03-30 17:10:09 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/employee/delete/{id}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.beingjavaguys.model.Status com.beingjavaguys.controller.RestController.deleteEmployee(long)
+2016-03-30 17:10:10 INFO  HibernateTransactionManager:339 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@5e8635b8] of Hibernate SessionFactory for HibernateTransactionManager
+2016-03-30 17:10:10 INFO  DispatcherServlet:498 - FrameworkServlet 'mvc-dispatcher': initialization completed in 1857 ms
+2016-03-30 17:10:26 WARN  PageNotFound:1114 - No mapping found for HTTP request with URI [/favicon.ico] in DispatcherServlet with name 'mvc-dispatcher'
+2016-03-30 17:10:26 WARN  PageNotFound:1114 - No mapping found for HTTP request with URI [/favicon.ico] in DispatcherServlet with name 'mvc-dispatcher'
+2016-03-30 17:14:14 WARN  PageNotFound:1114 - No mapping found for HTTP request with URI [/employee] in DispatcherServlet with name 'mvc-dispatcher'
+2016-03-30 17:14:17 WARN  PageNotFound:1114 - No mapping found for HTTP request with URI [/employee] in DispatcherServlet with name 'mvc-dispatcher'
+2016-03-30 17:14:45 WARN  PageNotFound:1114 - No mapping found for HTTP request with URI [/create] in DispatcherServlet with name 'mvc-dispatcher'
+2016-03-30 17:24:55 INFO  XmlWebApplicationContext:873 - Closing WebApplicationContext for namespace 'mvc-dispatcher-servlet': startup date [Wed Mar 30 17:10:08 BRT 2016]; root of context hierarchy
