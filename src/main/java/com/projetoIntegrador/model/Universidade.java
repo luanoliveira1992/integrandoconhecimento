@@ -1,7 +1,8 @@
 package com.projetoIntegrador.model;
 
-public class Habilidade {
-	
+public class Universidade {
+
 	private Integer codigo;
 	private String nome;
+	private Curso curso;
 }
