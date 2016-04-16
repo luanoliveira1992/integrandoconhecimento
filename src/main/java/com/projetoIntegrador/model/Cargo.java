@@ -7,11 +7,13 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import org.codehaus.jackson.annotate.JsonIgnoreProperties;
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.NotBlank;
 
 @Entity
 @Table(name="tbcargo")
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class Cargo implements ObjetoPersistente<Integer>{
 	
 	@Id

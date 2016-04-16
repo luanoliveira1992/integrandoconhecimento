@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.projetoIntegrador.model.ObjetoPersistente;
 
+
 public interface IDao<T extends ObjetoPersistente<C>, C> {
 	//Responsável por inserir um objeto
      public void insert(T objeto); 
